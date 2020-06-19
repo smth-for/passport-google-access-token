@@ -1,0 +1,52 @@
+{
+  "name": "passport-google-token",
+  "version": "1.0.0",
+  "description": "Google token authentication strategy for Passport",
+  "license": "MIT",
+  "main": "src/index.js",
+  "homepage": "https://github.com/smth-for/passport-google-token#readme",
+  "bugs": {
+    "url": "https://github.com/smth-for/passport-google-token/issues",
+    "email": "technical@smth.it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smth-for/passport-google-token.git"
+  },
+  "author": {
+    "name": "Michael Musso",
+    "email": "mmusso@smth.it",
+    "url": "http://www.smth.it/"
+  },
+  "contributors": [],
+  "keywords": [
+    "passport",
+    "goole",
+    "auth",
+    "authentication",
+    "identity"
+  ],
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "scripts": {
+    "lint": "eslint --fix .",
+    "prepublishOnly": "npm run test && npm run lint"
+  },
+  "dependencies": {
+    "passport-oauth": "1.0.0"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "chai-passport-strategy": "1.0.1",
+    "eslint": "7.2.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.21.2",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1"
+  }
+}
