@@ -1,4 +1,4 @@
-# passport-google-token
+# passport-google-access-token
 
 [Passport](http://passportjs.org/) strategy for authenticating with [Google](http://www.google.com/) access tokens using the OAuth 2.0 API.
 
