@@ -1,5 +1,5 @@
 {
-  "name": "passport-google-token",
+  "name": "@smth-for/passport-google-token",
   "version": "1.0.0",
   "description": "Google token authentication strategy for Passport",
   "license": "MIT",
@@ -11,13 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/smth-for/passport-google-token.git"
+    "url": "git+https://github.com/smth-for/passport-google-token.git"
   },
-  "author": {
-    "name": "Michael Musso",
-    "email": "mmusso@smth.it",
-    "url": "http://www.smth.it/"
-  },
+  "author": "Michael Musso <mmusso@smth.it> (http://www.smth.it/)",
   "contributors": [],
   "keywords": [
     "passport",
@@ -35,6 +31,10 @@
   "scripts": {
     "lint": "eslint --fix .",
     "prepublishOnly": "npm run test && npm run lint"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
   },
   "dependencies": {
     "passport-oauth": "1.0.0"

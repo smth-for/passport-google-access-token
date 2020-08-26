@@ -1,3 +1,12 @@
+[![Banner](static/poweredBy01.jpg)](https://smth.it)
+
+[![npm version](https://img.shields.io/npm/v/@smth-for/passport-google-access-token.svg)](https://www.npmjs.com/package/@smth-for/passport-google-access-token)
+[![Dependency Status](https://david-dm.org/smth-for/passport-google-access-token.svg)](https://david-dm.org/smth-for/passport-google-access-token)
+[![devDependency Status](https://david-dm.org/smth-for/passport-google-access-token/dev-status.svg)](https://david-dm.org/smth-for/passport-google-access-token#info=devDependencies)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/smth-for/passport-google-access-token/issues)
+[![Downloads](https://img.shields.io/npm/dm/@smth-for/passport-google-access-token.svg)](https://img.shields.io/npm/dm/@smth-for/passport-google-access-token.svg)
+[![HitCount](http://hits.dwyl.com/smth-for/passport-google-access-token.svg)](http://hits.dwyl.com/smth-for/passport-google-access-token)
+
 # passport-google-access-token
 
 [Passport](http://passportjs.org/) strategy for authenticating with [Google](http://www.google.com/) access tokens using the OAuth 2.0 API.
@@ -8,7 +17,7 @@ By plugging into Passport, google authentication can be easily and unobtrusively
 ## Installation
 
 ```shell
-TODO
+npm install @smth-for/passport-google-access-token
 ```
 
 ## Usage
@@ -101,9 +110,8 @@ Host: server.example.com
 access_token=base64_access_token_string
 ```
 
-## Credits
+## Special Thanks
 
-- [Michael Musso](https://github.com/LynX39)
 - [Nicholas Penree](https://github.com/drudge)
 - [Jared Hanson](https://github.com/jaredhanson)
 - [Eugene Obrezkov](https://github.com/ghaiklor)

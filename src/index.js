@@ -1,5 +1,6 @@
 const { OAuth2Strategy, InternalOAuthError } = require('passport-oauth');
 const { URL } = require('url');
+// eslint-disable-next-line no-unused-vars
 const crypto = require('crypto');
 
 /**
@@ -29,8 +30,8 @@ module.exports = class GoogleTokenStrategy extends OAuth2Strategy {
     const verify = _verify;
     const _gApiVersion = options.gApiVersion || 'v3';
 
-    options.authorizationURL = options.authorizationURL || `https://accounts.google.com/o/oauth2/auth`;
-    options.tokenURL = options.tokenURL || `https://accounts.google.com/o/oauth2/token`;
+    options.authorizationURL = options.authorizationURL || 'https://accounts.google.com/o/oauth2/auth';
+    options.tokenURL = options.tokenURL || 'https://accounts.google.com/o/oauth2/token';
 
     super(options, verify);
 
@@ -49,28 +50,28 @@ module.exports = class GoogleTokenStrategy extends OAuth2Strategy {
    * @param {Object} req
    * @param {Object} options
    */
-  authenticate(req, _options) {
+  authenticate (req, _options) {
     const accessToken = this.lookup(req, this._accessTokenField);
     const refreshToken = this.lookup(req, this._refreshTokenField);
 
     if (!accessToken) return this.fail({ message: `You should provide ${this._accessTokenField}` });
 
-      this._loadUserProfile(accessToken, (error, profile) => {
+    this._loadUserProfile(accessToken, (error, profile) => {
+      if (error) return this.error(error);
+
+      const verified = (error, user, info) => {
         if (error) return this.error(error);
+        if (!user) return this.fail(info);
 
-        const verified = (error, user, info) => {
-          if (error) return this.error(error);
-          if (!user) return this.fail(info);
+        return this.success(user, info);
+      };
 
-          return this.success(user, info);
-        };
-
-        if (this._passReqToCallback) {
-          this._verify(req, accessToken, refreshToken, profile, verified);
-        } else {
-          this._verify(accessToken, refreshToken, profile, verified);
-        }
-      });
+      if (this._passReqToCallback) {
+        this._verify(req, accessToken, refreshToken, profile, verified);
+      } else {
+        this._verify(accessToken, refreshToken, profile, verified);
+      }
+    });
   }
 
   /**
