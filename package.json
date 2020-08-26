@@ -1,17 +1,17 @@
 {
-  "name": "@smth-for/passport-google-token",
+  "name": "@smth-for/passport-google-access-token",
   "version": "1.0.0",
   "description": "Google token authentication strategy for Passport",
   "license": "MIT",
   "main": "src/index.js",
-  "homepage": "https://github.com/smth-for/passport-google-token#readme",
+  "homepage": "https://github.com/smth-for/passport-google-access-token#readme",
   "bugs": {
-    "url": "https://github.com/smth-for/passport-google-token/issues",
+    "url": "https://github.com/smth-for/passport-google-access-token/issues",
     "email": "technical@smth.it"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smth-for/passport-google-token.git"
+    "url": "git+https://github.com/smth-for/passport-google-access-token.git"
   },
   "author": "Michael Musso <mmusso@smth.it> (http://www.smth.it/)",
   "contributors": [],
