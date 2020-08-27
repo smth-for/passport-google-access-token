@@ -1,4 +1,4 @@
-[![Banner](static/poweredBy01.jpg)](https://smth.it)
+[![Banner](static/passportGoogleAccessToken.jpg)](https://smth.it)
 
 [![npm version](https://img.shields.io/npm/v/@smth-for/passport-google-access-token.svg)](https://www.npmjs.com/package/@smth-for/passport-google-access-token)
 [![Dependency Status](https://david-dm.org/smth-for/passport-google-access-token.svg)](https://david-dm.org/smth-for/passport-google-access-token)
@@ -109,6 +109,12 @@ Host: server.example.com
 
 access_token=base64_access_token_string
 ```
+## Join SMTH Community
+![Discord Banner 2](https://discordapp.com/api/guilds/748546400631128204/widget.png?style=banner2)
+
+## License
+
+[MIT License](LIsCENSE)
 
 ## Special Thanks
 
@@ -116,6 +122,3 @@ access_token=base64_access_token_string
 - [Jared Hanson](https://github.com/jaredhanson)
 - [Eugene Obrezkov](https://github.com/ghaiklor)
 
-## License
-
-[MIT License](./LICENSE)
