@@ -30,7 +30,7 @@
   },
   "scripts": {
     "lint": "eslint --fix .",
-    "prepublishOnly": "npm run test && npm run lint"
+    "prepublishOnly": "npm run lint"
   },
   "publishConfig": {
     "access": "public",
