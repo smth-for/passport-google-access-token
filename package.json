@@ -1,6 +1,6 @@
 {
   "name": "@smth-for/passport-google-access-token",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Google token authentication strategy for Passport",
   "license": "MIT",
   "main": "src/index.js",
