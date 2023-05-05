@@ -119,7 +119,7 @@ access_token=base64_access_token_string
 
 ## License
 
-[MIT License](LIsCENSE)
+[MIT License](LICENCE)
 
 ## Special Thanks
 
